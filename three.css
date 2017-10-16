@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+        /*************Nav*************/
+nav {
+  display: flex;
+  position: fixed;
+  background-color: #1c1e1f;
+  color: #ccc;
+  height: 45px;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.side a {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  padding: 8px;
+  border-bottom: 1px solid #111;
+  color: #ccc;
+  background: #1c1e1f;
+}
+
+.side a:hover{
+  background: red;
+}
+
+.link {
+  display: inline-block;
+  padding: 6px 10px 3px 7px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.link a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+#sidebar-btn {
+  display: none;
+}
+
+#label {
+  display: none;
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+#rotate {
+  transform: rotate(90deg);
+}
+
+#sidebar {
+  background: #151718;
+  width: 190px;
+  height: auto;
+  display: block;
+  position: fixed;
+  right: -190px;
+  top: 0px;
+  transition: all 0.3s linear;
+}
+
+#label {
+  font-size: 30px;
+  float: right;
+}
+
+#back-label {
+  font-size: 25px;
+  color: #ccc;
+}
+
+#label-box {
+  padding: 5px 0px 0 160px;
+}
+
+#back-label:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#sidebar-btn {
+  display: none;
+}
+
+        /*************Middle*************/
+
+#img {
+  height: 500px;
+  background-size: 1350px 500px;
+  background-image: url("picture.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+#img-box {
+  padding: 0 15px 0 15px;
+}
+
+.text {
+  text-align: center;
+  padding: 0 25px 0 25px;
+}
+
+.logo {
+  flex: 1;
+  padding: 6px 0 0 5px;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  margin: 5px 10px;
+  width: 50%;
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 5px #a6a6a6;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.box div {
+  position: inherit;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.box button {
+  margin-left: 7px;
+  width: auto;
+}
+
+          /*************Footer*************/
+
+footer {
+  display: flex;
+  background-color: #1c1e1f;
+  color: #ccc;
+  height: 70px;
+}
+
+.anchor-2 {
+  display: flex;
+}
+
+.link-2 {
+  display: flex;
+  padding-bottom: 3.5px;
+  word-spacing: 2px;
+}
+
+.link-2 a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.link-2 a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.anchor-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+}
+
+.hold, .hold-2 {
+  flex: 1;
+}
+
+.hold a, .hold-2 a {
+  display: block;
+}
+
+.no-pad {
+  padding-bottom: 0;
+}
+
+.glyphicon {
+  top: 0px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 425px) {
+  #hide {display: none;}
+  #label {display: block; cursor: pointer;}
+  .side a {display: block; margin: 0;}
+  #sidebar-btn:checked + #sidebar {right: 0px;}
+  #img {height: 280px; background-size: 387px 400px;}
+  footer {height: 90px;}
+}
+
+@media only screen and (min-width:426px) and (max-width:550px) {
+  #img {height: 300px; background-size: 487px 400px;}
+}
+
+@media only screen and (min-width:551px) and (max-width: 900px) {
+  #img {height: 320px; background-size: 787px 400px;}
+}
+
+@media only screen and (min-width:901px) and (max-width: 1000px) {
+  #img {height: 340px; background-size: 887px 400px;}
+}
+
+@media only screen and (min-width:1001px) and (max-width: 1030px) {
+  #img {height: 400px; background-size: 955px 400px;}
+}
+
+@media only screen and (min-width:320px) and (max-width: 760px) {
+  .container {display: flex; flex-wrap: wrap;}
+  .box {width: 100%;}
+}
